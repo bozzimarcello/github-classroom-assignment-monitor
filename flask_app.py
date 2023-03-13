@@ -22,7 +22,8 @@ def accesso():
     if request.method == "POST":
         token = request.form["token"]
         g = Github(token)
-    return redirect(url_for('index'))
+        return redirect(url_for('index'))
+    return render_template('accesso.html')
 
 @app.route('/compiti')
 def compiti():
