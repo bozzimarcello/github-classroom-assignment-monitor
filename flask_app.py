@@ -15,3 +15,8 @@ def dati():
     filename = elabora.ricava_percorso_assoluto(csvfile)
     lista_dati = elabora.analizza_dati(filename)
     return render_template('dati.html', lista_dati=lista_dati)
+
+@app.route('/compiti')
+def compiti():
+    lista_compiti = []
+    return render_template('compiti.html', lista_compiti=lista_compiti)
