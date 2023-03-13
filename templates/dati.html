@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href='/static/style.css' />
+        <title>Pubblicazione contenuti</title>
+    </head>
+    <body>
+        <h1>Dati</h1>
+        <table>
+            {% for riga in lista_dati %}
+                <tr>
+                    <td>{{ riga.Descrizione_edificio }}</td>
+                    <td>{{ riga.Valore_misura }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
