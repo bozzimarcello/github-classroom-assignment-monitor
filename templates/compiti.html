@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href='/static/style.css' />
+        <title>Elenco compiti</title>
+    </head>
+    <body>
+        <h1>Elenco compiti</h1>
+        <table>
+            {% for riga in lista_compiti %}
+                <tr>
+                    <td>{{ riga.Descrizione_edificio }}</td>
+                    <td>{{ riga.Valore_misura }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
