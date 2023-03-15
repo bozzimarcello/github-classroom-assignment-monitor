@@ -6,9 +6,10 @@
 <body>
     <h1>Accesso</h1>
     <p>Inserisci il token di accesso al tuo account GitHub:</p>
-    <form action="." method="post">
-        <input type="text" name="token"/>
+    <form action="/accesso" method="post">
+        <input type="text" name="mio-token"/>
         <input type="submit" value="Collegami">
     </form>
+    <p>Utente: {{utente}}</p>
 </body>
 </html>
